@@ -1,0 +1,158 @@
+.main-main{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l-adaptive);
+  padding-bottom: var(--space-l-adaptive);
+}
+
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/hero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 
+        clamp(12px, calc(12px + (72 - 12) * ((100vw - 375px) / (1280 - 375))), 72px)
+        clamp(12px, calc(12px + (700 - 12) * ((100vw - 375px) / (1920 - 375))), 700px)
+        clamp(12px, calc(12px + (72 - 12) * ((100vw - 375px) / (1280 - 375))), 72px)
+        var(--space-page);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s-adaptive);
+    align-items: start;
+}
+
+.service-cards{
+    padding: 0 var(--space-page);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-m-adaptive);
+    @media(max-width:900px){
+        grid-template-columns: 1fr;
+    }
+
+    // align-content: stretch;
+    // justify-content: stretch;
+    // align-items: stretch;
+    // justify-items: stretch;
+}
+.plan{
+    padding: var(--space-m-adaptive) var(--space-page);
+    background-color: var(--color-base);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m-adaptive);
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "first  first  second second third  third"
+        ".      fourth fourth fifth  fifth  .";
+
+        gap: var(--space-m-adaptive);
+
+        @media(max-width:1280px){
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "first first second second"
+            "third third fourth fourth"
+            ".     fifth fifth  .";
+        }
+        @media(max-width:750px){
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas: 
+            "first" "second" "third" "fourth" "fifth";
+        }
+        
+
+        // first second third fourth fifth
+
+        .plan-card-1{
+            grid-area: first;
+        }
+        .plan-card-2{
+            grid-area: second;
+        }
+        .plan-card-3{
+            grid-area: third;
+        }
+        .plan-card-4{
+            grid-area: fourth;
+        }
+        .plan-card-5{
+            grid-area: fifth;
+        }
+        
+    }
+}
+
+.approach{
+    padding: 0 var(--space-page);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m-adaptive);
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "first  first  second second third  third"
+        ".      fourth fourth fifth  fifth  .";
+
+        gap: var(--space-m-adaptive);
+
+        @media(max-width:1280px){
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "first first second second"
+            "fifth fifth fourth fourth"
+            ".     third third  .";
+        }
+        @media(max-width:750px){
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas: 
+            "first" "second" "third" "fourth" "fifth";
+        }
+    
+        // first second third fourth fifth
+
+        .approach-card-1{
+            grid-area: first;
+        }
+        .approach-card-2{
+            grid-area: second;
+        }
+        .approach-card-3{
+            grid-area: third;
+        }
+        .approach-card-4{
+            grid-area: fourth;
+        }
+        .approach-card-5{
+            grid-area: fifth;
+        }
+        
+    }
+}
+.projects{
+    padding: 0 var(--space-page);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m-adaptive);
+
+    .projects-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-s-adaptive);
+        justify-content: center;
+    }
+    
+    &__btn-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
