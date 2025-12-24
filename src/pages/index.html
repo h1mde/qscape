@@ -7,20 +7,219 @@
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
-    <main>
-        <h1 class="title">Пупупупу</h1>
-    <h1 class="subtitle">Пупупу</h1>
-    <p class="text text--larger">Пупупупу</p>
-    <p class="text">Пупупупу</p>
-    <p class="text--smaller">Пупупупу</p>
-    <a href="" class="btn btn--highlight">Пупупупу</a>
-    <a href="" class="btn btn--muted">Пупупупу</a>
-    <a href="" class="link">Пупупупу</a>
-    <a href="" class="link--inactive">Пупупупу</a>
-    <a href="" class="link--icon-before">Пупупупу</a>
+<body class="page-main">
 
+    <!-- ДОБАВИТЬ СКРОЛЛ -->
 
+    @@include('../components/_form.html')
+
+    @@include('../components/_header.html')
+
+    <main class="main-main">
+        <section class="hero">
+            <h1 class="hero__title text--light title title--bolder">Цифровой рост вашего бизнеса — специализация ООО «КУСКЕЙП»</h1>
+            <p class="hero__text text text--light">Разрабатываем эффективные стратегии цифрового развития бизнеса, которые приносят результат.</p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="footer__btn btn btn--highlight">Рассчитать проект</label>
+        </section>
+
+        <section class="service-cards">
+            @@include('../components/_service-card-min.html',{
+                'serviceCardClass':'development',
+                'serviceCardSubtitle':'Веб-разработка',
+                'serviceCardText':'Создание сайта,  интернет-магазина или web-сервиса, который действительно работает на бизнес'
+            })
+             @@include('../components/_service-card-min.html',{
+                'serviceCardClass':'promotion',
+                'serviceCardSubtitle':'Продвижение',
+                'serviceCardText':  'SEO и интернет-маркетинг для роста узнаваемости бренда и привлечения клиентов'
+            })
+                                    
+            @@include('../components/_service-card-min.html',{
+                'serviceCardClass':'crm',
+                'serviceCardSubtitle':'Битрикс24',
+                'serviceCardText':  'Внедрение системы управления бизнесом под ключ с учетом всей специфики'
+            })
+            @@include('../components/_service-card-min.html',{
+                'serviceCardClass':'design',
+                'serviceCardSubtitle':'Дизайн',
+                'serviceCardText':  'SEO и интернет-маркетинг для роста узнаваемости бренда и привлечения клиентов'
+            }) 
+        </section>
+
+        <section class="plan">
+            <h1 class="plan__title text--light title text--centered">Наш план работы</h1>
+            <div class="plan__container">
+                @@include('../components/_plan-card.html',{
+                    'planCardNum':'1',
+                    'planCardText':'Утверждаем ТЗ, заполняем бриф, согласовываем ход работ',
+                })
+                @@include('../components/_plan-card.html',{
+                    'planCardNum':'2',
+                    'planCardText':'Подписываем договор и вносится предоплата 50%',
+                })
+                @@include('../components/_plan-card.html',{
+                    'planCardNum':'3',
+                    'planCardText':'Разрабатываем дизайн, согласуем и внесем правки',
+                })
+                @@include('../components/_plan-card.html',{
+                    'planCardNum':'4',
+                    'planCardText':'Разрабатываем и публикуем сайт, обучаем работе с ним',
+                })
+                @@include('../components/_plan-card.html',{
+                    'planCardNum':'5',
+                    'planCardText':'Продвигаем, обслуживаем и сопровождаем сайт',
+                })
+            </div>
+        </section>
+        <section class="approach">
+            <h1 class="approach__title title text--centered">Наш подход к работе</h1>
+            <div class="approach__container">
+                @@include('../components/_approach-card.html',{
+                    'approachCardNum':'1',
+                    'approachCardPoint':'Продвижение под ключ',
+                    'approachCardText':'Предоставляем полный цикл продвижения — от поисковой оптимизации до контекстной рекламы и SMM.',
+                })
+                @@include('../components/_approach-card.html',{
+                    'approachCardNum':'2',
+                    'approachCardPoint':'Комплексный подход',
+                    'approachCardText':'Берем проекты под полный контроль — от идеи и разработки до запуска, наполнения и долгосрочного продвижения.',
+                })
+                @@include('../components/_approach-card.html',{
+                    'approachCardNum':'3',
+                    'approachCardPoint':'Возможность развития',
+                    'approachCardText':'Сайт можно легко масштабировать: меняем дизайн, добавляем функционал, интегрируем с 1С и другими системами.',
+                })
+                @@include('../components/_approach-card.html',{
+                    'approachCardNum':'4',
+                    'approachCardPoint':'Оперативность, качество, поддержка',
+                    'approachCardText':'Гарантируем высокий уровень сервиса, быструю техническую и консультационную поддержку от опытных специалистов.',
+                })
+                @@include('../components/_approach-card.html',{
+                    'approachCardNum':'5',
+                    'approachCardPoint':'Профессиональное решение сложных задач',
+                    'approachCardText':'Создаем профессиональные решения под ваши уникальные цели. Используем современные технологии и системы автоматизации. ',
+                })
+            </div>
+        </section>
+        <section class="projects">
+            <h1 class="projects__title title text--centered">Наши проекты</h1>
+            <div class="projects-container">
+                
+                <!--                 
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'',
+                    'projectCardLink':'',
+                })
+                -->
+
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'01',
+                    'projectCardLink':'',
+                })
+
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'02',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'03',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'04',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'05',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'06',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'08',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'09',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'10',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'11',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'12',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'13',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'14',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'15',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'16',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'17',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'19',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'20',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'21',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'22',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'23',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'24',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'25',
+                    'projectCardLink':'',
+                })
+                @@include('../components/_project-card.html',{
+                    'projectCardNum':'26',
+                    'projectCardLink':'',
+                }) 
+            </div>
+            <div class="projects__btn-container">
+                <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+                <label for="overlay-toggle" class="projects__btn btn btn--highlight">Хочу так же!</label>
+            </div>
+        </section>
     </main>
+
+    @@include('../components/_footer.html')
+
+    @@include('../components/_scroll-up.html')
 </body>
 </html>

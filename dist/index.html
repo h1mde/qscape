@@ -7,20 +7,354 @@
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
-    <main>
-        <h1 class="title">Пупупупу</h1>
-    <h1 class="subtitle">Пупупу</h1>
-    <p class="text text--larger">Пупупупу</p>
-    <p class="text">Пупупупу</p>
-    <p class="text--smaller">Пупупупу</p>
-    <a href="" class="btn btn--highlight">Пупупупу</a>
-    <a href="" class="btn btn--muted">Пупупупу</a>
-    <a href="" class="link">Пупупупу</a>
-    <a href="" class="link--inactive">Пупупупу</a>
-    <a href="" class="link--icon-before">Пупупупу</a>
+<body class="page-main">
 
+    
 
+    <section id="overlay" class="overlay">
+  <div class="overlay-content">
+    <form action="" class="form">
+        <h1 class="form__title title">
+            Связь с нами
+            <label for="overlay-toggle" class="close-btn">
+                <svg class="close-btn__svg" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.2812 0.294922C22.6743 -0.0982682 23.312 -0.0982391 23.7051 0.294922C24.0982 0.688189 24.0982 1.32646 23.7051 1.71973L13.4229 12.0059L23.7051 22.292C24.0979 22.6852 24.0979 23.3226 23.7051 23.7158C23.312 24.1091 22.6743 24.1091 22.2812 23.7158L12 13.4297L1.71875 23.7158C1.32566 24.1091 0.68801 24.1091 0.294922 23.7158C-0.0981156 23.3225 -0.0981494 22.6852 0.294922 22.292L10.5762 12.0049L0.294922 1.71973C-0.0981663 1.32646 -0.0981663 0.688189 0.294922 0.294922C0.687918 -0.0979497 1.32475 -0.0979066 1.71777 0.294922L11.999 10.5811L22.2812 0.294922Z" fill="#2E4A8B"/>
+                </svg>
+            </label>
+        </h1>
+
+        <p class="form__text text--muted">
+            Подробно расскажем о наших услугах, 
+            стоимости и подготовим индивидуальное 
+            предложение для вас!
+        </p>
+        
+        <div class="form-item">
+            <label class="form__label text" for="name">Введите ваше имя:</label>
+            <input class="form__input input" type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-item">
+            <label class="form__label text" for="phone">Введите ваш номер телефона:</label>
+            <input class="form__input input" type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-item">
+            <label class="form__label text" for="message">Введите ваш запрос:</label>
+            <textarea class="form__input input" id="message" name="message" required></textarea>
+        </div>
+
+        <button class="form-btn btn btn--highlight" type="submit">Отправить</button>
+    </form>
+  </div>
+</section>
+
+    <header class="header" id="header">
+    <a href="index.html" class="header__logo-link">
+        <img class="header__logo" src="assets/images/logo.webp" alt="QScape logo">
+    </a>
+    <nav class="header__nav">
+        <a href="index.html" class="header__nav-link link link-main">Главная</a>
+        <a href="services.html" class="header__nav-link link link-services">Услуги</a>
+        <a href="tel:+79200678467" class="header__nav-phone link icon-phone-dark">+7 (920) 067-84-67</a>
+        <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+        <label for="overlay-toggle" class="header__btn btn btn--muted">Заказать звонок</label>
+    </nav>
+</header>
+
+    <main class="main-main">
+        <section class="hero">
+            <h1 class="hero__title text--light title title--bolder">Цифровой рост вашего бизнеса — специализация ООО «КУСКЕЙП»</h1>
+            <p class="hero__text text text--light">Разрабатываем эффективные стратегии цифрового развития бизнеса, которые приносят результат.</p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="footer__btn btn btn--highlight">Рассчитать проект</label>
+        </section>
+
+        <section class="service-cards">
+            <a href="services.html" class="service-card-min-link">
+    <div class="service-card-min service-card-min--development">
+        <h2 class="subtitle text--light service-card-min__subtitle">Веб-разработка</h2>
+        <p class="text text--light service-card-min__text">
+            Создание сайта,  интернет-магазина или web-сервиса, который действительно работает на бизнес
+        </p>
+    </div>
+</a>
+             <a href="services.html" class="service-card-min-link">
+    <div class="service-card-min service-card-min--promotion">
+        <h2 class="subtitle text--light service-card-min__subtitle">Продвижение</h2>
+        <p class="text text--light service-card-min__text">
+            SEO и интернет-маркетинг для роста узнаваемости бренда и привлечения клиентов
+        </p>
+    </div>
+</a>
+                                    
+            <a href="services.html" class="service-card-min-link">
+    <div class="service-card-min service-card-min--crm">
+        <h2 class="subtitle text--light service-card-min__subtitle">Битрикс24</h2>
+        <p class="text text--light service-card-min__text">
+            Внедрение системы управления бизнесом под ключ с учетом всей специфики
+        </p>
+    </div>
+</a>
+            <a href="services.html" class="service-card-min-link">
+    <div class="service-card-min service-card-min--design">
+        <h2 class="subtitle text--light service-card-min__subtitle">Дизайн</h2>
+        <p class="text text--light service-card-min__text">
+            SEO и интернет-маркетинг для роста узнаваемости бренда и привлечения клиентов
+        </p>
+    </div>
+</a> 
+        </section>
+
+        <section class="plan">
+            <h1 class="plan__title text--light title text--centered">Наш план работы</h1>
+            <div class="plan__container">
+                <div class="plan-card plan-card-1">
+    <span class="plan-card__num text--circled">1</span>
+    <p class="plan-card__text text text--light">
+        Утверждаем ТЗ, заполняем бриф, согласовываем ход работ
+    </p>
+</div>
+                <div class="plan-card plan-card-2">
+    <span class="plan-card__num text--circled">2</span>
+    <p class="plan-card__text text text--light">
+        Подписываем договор и вносится предоплата 50%
+    </p>
+</div>
+                <div class="plan-card plan-card-3">
+    <span class="plan-card__num text--circled">3</span>
+    <p class="plan-card__text text text--light">
+        Разрабатываем дизайн, согласуем и внесем правки
+    </p>
+</div>
+                <div class="plan-card plan-card-4">
+    <span class="plan-card__num text--circled">4</span>
+    <p class="plan-card__text text text--light">
+        Разрабатываем и публикуем сайт, обучаем работе с ним
+    </p>
+</div>
+                <div class="plan-card plan-card-5">
+    <span class="plan-card__num text--circled">5</span>
+    <p class="plan-card__text text text--light">
+        Продвигаем, обслуживаем и сопровождаем сайт
+    </p>
+</div>
+            </div>
+        </section>
+        <section class="approach">
+            <h1 class="approach__title title text--centered">Наш подход к работе</h1>
+            <div class="approach__container">
+                <div class="approach-card approach-card-1">
+    <p class="approach-card__num text text--larger">Продвижение под ключ</p>
+    <div class="approach-card__line"></div>
+    <p class="approach-card__text text">
+        Предоставляем полный цикл продвижения — от поисковой оптимизации до контекстной рекламы и SMM.
+    </p>
+</div>
+                <div class="approach-card approach-card-2">
+    <p class="approach-card__num text text--larger">Комплексный подход</p>
+    <div class="approach-card__line"></div>
+    <p class="approach-card__text text">
+        Берем проекты под полный контроль — от идеи и разработки до запуска, наполнения и долгосрочного продвижения.
+    </p>
+</div>
+                <div class="approach-card approach-card-3">
+    <p class="approach-card__num text text--larger">Возможность развития</p>
+    <div class="approach-card__line"></div>
+    <p class="approach-card__text text">
+        Сайт можно легко масштабировать: меняем дизайн, добавляем функционал, интегрируем с 1С и другими системами.
+    </p>
+</div>
+                <div class="approach-card approach-card-4">
+    <p class="approach-card__num text text--larger">Оперативность, качество, поддержка</p>
+    <div class="approach-card__line"></div>
+    <p class="approach-card__text text">
+        Гарантируем высокий уровень сервиса, быструю техническую и консультационную поддержку от опытных специалистов.
+    </p>
+</div>
+                <div class="approach-card approach-card-5">
+    <p class="approach-card__num text text--larger">Профессиональное решение сложных задач</p>
+    <div class="approach-card__line"></div>
+    <p class="approach-card__text text">
+        Создаем профессиональные решения под ваши уникальные цели. Используем современные технологии и системы автоматизации. 
+    </p>
+</div>
+            </div>
+        </section>
+        <section class="projects">
+            <h1 class="projects__title title text--centered">Наши проекты</h1>
+            <div class="projects-container">
+                
+                
+
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-01">
+        <img src="assets/images/project-image01.webp" alt="Проект 01" class="project-card__img">
+    </div>
+</a>
+
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-02">
+        <img src="assets/images/project-image02.webp" alt="Проект 02" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-03">
+        <img src="assets/images/project-image03.webp" alt="Проект 03" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-04">
+        <img src="assets/images/project-image04.webp" alt="Проект 04" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-05">
+        <img src="assets/images/project-image05.webp" alt="Проект 05" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-06">
+        <img src="assets/images/project-image06.webp" alt="Проект 06" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-08">
+        <img src="assets/images/project-image08.webp" alt="Проект 08" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-09">
+        <img src="assets/images/project-image09.webp" alt="Проект 09" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-10">
+        <img src="assets/images/project-image10.webp" alt="Проект 10" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-11">
+        <img src="assets/images/project-image11.webp" alt="Проект 11" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-12">
+        <img src="assets/images/project-image12.webp" alt="Проект 12" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-13">
+        <img src="assets/images/project-image13.webp" alt="Проект 13" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-14">
+        <img src="assets/images/project-image14.webp" alt="Проект 14" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-15">
+        <img src="assets/images/project-image15.webp" alt="Проект 15" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-16">
+        <img src="assets/images/project-image16.webp" alt="Проект 16" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-17">
+        <img src="assets/images/project-image17.webp" alt="Проект 17" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-19">
+        <img src="assets/images/project-image19.webp" alt="Проект 19" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-20">
+        <img src="assets/images/project-image20.webp" alt="Проект 20" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-21">
+        <img src="assets/images/project-image21.webp" alt="Проект 21" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-22">
+        <img src="assets/images/project-image22.webp" alt="Проект 22" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-23">
+        <img src="assets/images/project-image23.webp" alt="Проект 23" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-24">
+        <img src="assets/images/project-image24.webp" alt="Проект 24" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-25">
+        <img src="assets/images/project-image25.webp" alt="Проект 25" class="project-card__img">
+    </div>
+</a>
+                <a href="" class="project-card-link">
+    <div class="project-card project-card-26">
+        <img src="assets/images/project-image26.webp" alt="Проект 26" class="project-card__img">
+    </div>
+</a> 
+            </div>
+            <div class="projects__btn-container">
+                <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+                <label for="overlay-toggle" class="projects__btn btn btn--highlight">Хочу так же!</label>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+    <div class="footer-top">
+        <a href="index.html" class="footer__logo-link">
+            <img class="footer__logo" src="assets/images/logo-simple.svg" alt="QScape logo">
+        </a>
+        <div class="footer-info">
+            <div class="footer-contacts">
+                <a href="mailto:info@qscape.ru" class="footer-info__item link icon-email-light text text--accent">info@qscape.ru</a>
+                <a href="tel:+79200678467" class="footer-info__item link icon-phone-light text text--accent">+7 (920) 067-84-67</a>
+                <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+                <label for="overlay-toggle" class="footer-info__btn btn btn--highlight">Заказать звонок</label>
+            </div>
+            <div class="footer-info__container">
+                <img class="footer-info__icon" src="assets/images/icon-info-light.svg" alt="">
+                <p class="footer-info__text text text--accent">
+                    ООО&nbsp"КУСКЕЙП"<br>
+                    ИНН:&nbsp5260479553<br>
+                    ОГРН:&nbsp1215200032112<br>
+                </p>
+            </div>
+            <div class="footer-info__container">
+                <img class="footer-info__icon" src="assets/images/icon-map-light.svg" alt="">
+                <p class="footer-info__item text text--accent">
+                    г.&nbspНижний&nbspНовгород,<br>
+                    ул.&nbspКовалихинская,<br>
+                    д.&nbsp72Б, 603155<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <p class="footer__text text">
+        © 2025 ООО "КУСКЕЙП" Все права защищены
+    </p>
+</footer>
+
+    <a href="#header" class="scroll-up">
+    <svg class="scroll-up__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 13.4141L7 1.41406M7 1.41406L1 7.41406M7 1.41406L13 7.41406" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+</a>
 </body>
 </html>
