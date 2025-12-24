@@ -1,0 +1,65 @@
+.service-card-min{
+    padding: var(--space-m-adaptive);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s-adaptive);
+    border-radius: var(--space-xs);
+    height: 100%;
+    
+    &--development{
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)),
+            url(../images/service-development.webp);
+
+        &:hover{
+            background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)),
+            url(../images/service-development.webp), 
+        }
+    }
+    &--promotion{
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)),
+            url(../images/service-promotion.webp);
+
+        &:hover{
+            background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)),
+            url(../images/service-promotion.webp), 
+        }
+    }
+    &--crm{
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)),
+            url(../images/service-crm.webp);
+
+        &:hover{
+            background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)),
+            url(../images/service-crm.webp), 
+        }
+    }
+    &--design{
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)),
+            url(../images/service-design.webp);
+
+        &:hover{
+            background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)),
+            url(../images/service-design.webp), 
+        }
+    }
+}
