@@ -1,16 +1,17 @@
 .btn{
-    padding: 6px 24px;
+    padding: 4px 22px;
     text-align: center;
     border-radius: 50px;
     font-weight: 600;
-    transition: var(transition);
 
+    cursor: pointer;
     &--highlight{
         background-color: var(--color-accent);
         color: var(--color-light);
-
+        border: var(--color-accent) 2px solid;
         &:hover{
             background-color: var(--color-accent-lighter);
+            border: var(--color-accent-lighter) 2px solid;
         }
     }
 
@@ -29,18 +30,27 @@
 .link{
     color: var(--color-base);
     font-weight: 600;
+
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+    &--thinner{
+        font-weight: 500;
+    }
 }
 
 .input{
-    border: solid 2px var(--color-base);
+    border: solid 2px var(--color-accent);
     border-radius: var(--space-xs);
     padding: var(--space-xs);
-    
+    background-color: var(--color-light);
+
     &:hover{
-        border: solid 2px var(--color-accent);
+        border: solid 2px var(--color-base);
     }
     &:focus{
         outline: none;
-        border: solid 2px var(--color-accent);
+        border: solid 2px var(--color-base);
     }
 }
