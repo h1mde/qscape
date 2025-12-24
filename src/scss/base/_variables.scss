@@ -18,12 +18,10 @@
     --space-m:  24px;
     --space-s:  12px;
     --space-xs:  6px;
-    --space-l-adaptive:  clamp(48px, calc(48px + (72 - 48) * ((100vw - 900px) / (1920 - 900))), 72px);
-    --space-m-adaptive:  clamp(24px, calc(24px + (48 - 24) * ((100vw - 900px) / (1280 - 900))), 48px);
-    --space-s-adaptive:  clamp(12px, calc(12px + (24 - 12) * ((100vw - 900px) / (1280 - 900))), 24px);
-    --space-xs-adaptive: clamp( 6px, calc( 6px + (12 -  6) * ((100vw - 900px) / (1280 - 900))), 12px);
+    --space-l-adaptive:  clamp(48px, calc(48px + (72 - 48) * ((100vw - 375px) / (1280 - 375))), 72px);
+    --space-m-adaptive:  clamp(24px, calc(24px + (48 - 24) * ((100vw - 375px) / (1280 - 375))), 48px);
+    --space-s-adaptive:  clamp(12px, calc(12px + (24 - 12) * ((100vw - 375px) / (1280 - 375))), 24px);
+    --space-xs-adaptive: clamp( 6px, calc( 6px + (12 -  6) * ((100vw - 375px) / (1280 - 375))), 12px);
     
     --shadow: 0 0 12px rgba(46, 74, 139, 0.2);
-
-    --transition:var(100ms linear)
 }
