@@ -1,0 +1,6 @@
+.plan-card{
+    display: grid;
+    grid-template-columns: 40px calc(100% - 40px - var(--space-s-adaptive));
+    gap: var(--space-s-adaptive);
+    align-items: center;
+}
