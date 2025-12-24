@@ -1,0 +1,25 @@
+.service-card{
+    display: flex;
+    align-items: center;
+    gap: var(--space-s-adaptive);
+
+    &__img{
+        width: 33%;
+        @media(max-width:900px){
+            display: none;
+        }
+    }
+
+    .service-card-block{
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-s-adaptive);
+    }
+
+    .service-card-container{
+        display: flex;
+        align-items: center;
+        gap: var(--space-s-adaptive);
+        flex-wrap: wrap;
+    }
+}
