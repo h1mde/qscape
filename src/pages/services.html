@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QScape</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="page-services">
+
+    <!-- ДОБАВИТЬ СКРОЛЛ -->
+    @@include('../components/_form.html')
+    
+    @@include('../components/_header.html')
+
+    <nav class="services-nav">
+        <a href="#service-development" class="services-nav__link link link--thinner">Веб-разработка</a>
+        <a href="#service-design" class="services-nav__link link link--thinner">Дизайн</a>
+        <a href="#service-promotion" class="services-nav__link link link--thinner">Продвижение</a>
+        <a href="#service-crm" class="services-nav__link link link--thinner">Битрикс24</a>
+    </nav>
+
+    <main class="main-services">
+        <section class="service" id="service-development">
+            <h1 class="service__title title text--centered">Веб-разработка</h1>
+            @@include('../components/_service-card-left.html',{
+                'serviceCardNum':'01',
+                'serviceCardSubtitle':'Интернет-магазин',
+                'serviceCardText':'Создадим легкий в управлении интернет-магазин на платформе 1С-Битрикс. Продумаем функционал: сортировку и фильтрацию товаров, добавление новых товаров и т.д. Интегрируем с вашей CRM и платежными системами. Позаботимся о понятной структуре, удобстве пользования и привлекательном дизайне.',
+                'serviceCardPrice':'99 000'
+            })
+            @@include('../components/_service-card-right.html',{
+                'serviceCardNum':'02',
+                'serviceCardSubtitle':'Landing Page',
+                'serviceCardText':'Разрабатываем посадочные страницы для конкретного товара или услуги. Вы получите готовый инструмент для привлечения клиентов. Лендинг будет отвечать вашим бизнес-задачам, соответствовать пользовательским предпочтениям и точно подведет посетителей к совершению целевого действия.',
+                'serviceCardPrice':'29 990'
+            })
+            @@include('../components/_service-card-left.html',{
+                'serviceCardNum':'03',
+                'serviceCardSubtitle':'Корпоративный сайт',
+                'serviceCardText':'Разработаем современный корпоративный сайт на 1С-Битрикс с мобильной версией и базовой SEO-оптимизацией. Позаботимся о том, чтобы сайт максимально соответствовал задачам вашего бизнеса и ожиданиям целевой аудитории.',
+                'serviceCardPrice':'79 000'
+            })
+            @@include('../components/_help.html')     
+        </section>
+        <section class="service" id="service-design">
+            <h1 class="service__title title text--centered">Дизайн</h1>
+            @@include('../components/_service-card-right.html',{
+            'serviceCardNum':'04',
+            'serviceCardSubtitle':'Дизайн/редизайн сайта',
+            'serviceCardText':'Независимо от типа проекта — лендинг, интернет-магазин или корпоративный сайт — мы создаем уникальный, адаптивный и функциональный дизайн. Каждый элемент (баннеры, кнопки, навигация) разрабатывается с учетом поведения пользователя и бизнес-целей. Результат — сайт, который не только выглядит современно, но и работает на продажи.',
+            'serviceCardPrice':'55 000'
+            })
+            @@include('../components/_service-card-left.html',{
+            'serviceCardNum':'05',
+            'serviceCardSubtitle':'Разработка логотипа',
+            'serviceCardText':'Логотип — это визуальная «подпись» бренда, которая формирует первое впечатление. Мы создаём запоминающийся и узнаваемый символ, отражающий суть вашей компании. Логотип будет работать на всех каналах: от сайта до упаковки и рекламы, помогая вам выделиться на фоне конкурентов.',
+            'serviceCardPrice':'15 000'
+            })
+            @@include('../components/_service-card-right.html',{
+            'serviceCardNum':'09',
+            'serviceCardSubtitle':'Разработка фирменного стиля',
+            'serviceCardText':'Фирменный стиль — это единый визуальный язык вашего бизнеса, который передаёт его ценности и позиционирование. Мы не просто создадим шрифты, цвета и элементы оформления — мы раскроем суть вашей компании: миссию, философию, преимущества и отношение к клиентам. Результат — целостный образ, который будет восприниматься как надежный и сильный бренд.',
+            'serviceCardPrice':'34 500'
+            })
+            @@include('../components/_help.html')
+        </section>
+        <section class="service" id="service-promotion">
+            <h1 class="service__title title text--centered">Продвижение</h1>
+            @@include('../components/_service-card-left.html',{
+            'serviceCardNum':'07',
+            'serviceCardSubtitle':'Контекстная реклама',
+            'serviceCardText':'Настройка и ведение рекламных кампаний в Яндекс.Директ и Google Adwords, постоянная работа над повышением эффективности.',
+            'serviceCardPrice':'19 900'
+            })
+            @@include('../components/_service-card-right.html',{
+            'serviceCardNum':'08',
+            'serviceCardSubtitle':'Поисковое продвижение',
+            'serviceCardText':'Выведем сайт в ТОП Яндекс и Google, поможем получать заявки из поисковых систем. Делаем все, что нужно: исправляем технические ошибки, делаем сайт удобнее для клиентов, наполняем полезным контентом.',
+            'serviceCardPrice':'29 900'
+            })
+            @@include('../components/_help.html')
+        </section>
+        <section class="service" id="service-crm">
+            <h1 class="service__title title text--centered">Битрикс24</h1>
+            @@include('../components/_service-card-left.html',{
+            'serviceCardNum':'06',
+            'serviceCardSubtitle':'Битрикс24',
+            'serviceCardText':'Битрикс24 - корпоративный портал, информационная база компании, предназначенная для внутреннего использования. CRM позволяет в едином пространстве управлять организационными, коммуникационными и проектными процессами.',
+            'serviceCardPrice':'99 000'
+            })
+            @@include('../components/_help.html')
+        </section>
+    </main>
+    @@include('../components/_footer.html')
+
+    @@include('../components/_scroll-up.html')
+</body>
+</html>

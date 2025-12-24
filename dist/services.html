@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>QScape</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="page-services">
+
+    
+    <section id="overlay" class="overlay">
+  <div class="overlay-content">
+    <form action="" class="form">
+        <h1 class="form__title title">
+            Связь с нами
+            <label for="overlay-toggle" class="close-btn">
+                <svg class="close-btn__svg" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.2812 0.294922C22.6743 -0.0982682 23.312 -0.0982391 23.7051 0.294922C24.0982 0.688189 24.0982 1.32646 23.7051 1.71973L13.4229 12.0059L23.7051 22.292C24.0979 22.6852 24.0979 23.3226 23.7051 23.7158C23.312 24.1091 22.6743 24.1091 22.2812 23.7158L12 13.4297L1.71875 23.7158C1.32566 24.1091 0.68801 24.1091 0.294922 23.7158C-0.0981156 23.3225 -0.0981494 22.6852 0.294922 22.292L10.5762 12.0049L0.294922 1.71973C-0.0981663 1.32646 -0.0981663 0.688189 0.294922 0.294922C0.687918 -0.0979497 1.32475 -0.0979066 1.71777 0.294922L11.999 10.5811L22.2812 0.294922Z" fill="#2E4A8B"/>
+                </svg>
+            </label>
+        </h1>
+
+        <p class="form__text text--muted">
+            Подробно расскажем о наших услугах, 
+            стоимости и подготовим индивидуальное 
+            предложение для вас!
+        </p>
+        
+        <div class="form-item">
+            <label class="form__label text" for="name">Введите ваше имя:</label>
+            <input class="form__input input" type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-item">
+            <label class="form__label text" for="phone">Введите ваш номер телефона:</label>
+            <input class="form__input input" type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-item">
+            <label class="form__label text" for="message">Введите ваш запрос:</label>
+            <textarea class="form__input input" id="message" name="message" required></textarea>
+        </div>
+
+        <button class="form-btn btn btn--highlight" type="submit">Отправить</button>
+    </form>
+  </div>
+</section>
+    
+    <header class="header" id="header">
+    <a href="index.html" class="header__logo-link">
+        <img class="header__logo" src="assets/images/logo.webp" alt="QScape logo">
+    </a>
+    <nav class="header__nav">
+        <a href="index.html" class="header__nav-link link link-main">Главная</a>
+        <a href="services.html" class="header__nav-link link link-services">Услуги</a>
+        <a href="tel:+79200678467" class="header__nav-phone link icon-phone-dark">+7 (920) 067-84-67</a>
+        <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+        <label for="overlay-toggle" class="header__btn btn btn--muted">Заказать звонок</label>
+    </nav>
+</header>
+
+    <nav class="services-nav">
+        <a href="#service-development" class="services-nav__link link link--thinner">Веб-разработка</a>
+        <a href="#service-design" class="services-nav__link link link--thinner">Дизайн</a>
+        <a href="#service-promotion" class="services-nav__link link link--thinner">Продвижение</a>
+        <a href="#service-crm" class="services-nav__link link link--thinner">Битрикс24</a>
+    </nav>
+
+    <main class="main-services">
+        <section class="service" id="service-development">
+            <h1 class="service__title title text--centered">Веб-разработка</h1>
+            <div class="service-card">
+    <img src="assets/images/illustration01.svg" alt="Интернет-магазин" class="service-card__img">
+    <div class="service-card-block">
+        <h2 class="service-card__subtitle subtitle">Интернет-магазин</h2>
+        <p class="service-card__text text">
+            Создадим легкий в управлении интернет-магазин на платформе 1С-Битрикс. Продумаем функционал: сортировку и фильтрацию товаров, добавление новых товаров и т.д. Интегрируем с вашей CRM и платежными системами. Позаботимся о понятной структуре, удобстве пользования и привлекательном дизайне.
+        </p>
+        <div class="service-card-container">
+            <p class="service-card__price text text--bolder">
+                от 99 000 руб.
+            </p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="service-card__btn btn btn--muted">Заказать услугу</label>
+        </div>
+    </div>
+</div>
+            <div class="service-card">
+    <div class="service-card-block">
+        <h2 class="service-card__subtitle subtitle">Landing Page</h2>
+        <p class="service-card__text text">
+            Разрабатываем посадочные страницы для конкретного товара или услуги. Вы получите готовый инструмент для привлечения клиентов. Лендинг будет отвечать вашим бизнес-задачам, соответствовать пользовательским предпочтениям и точно подведет посетителей к совершению целевого действия.
+        </p>
+        <div class="service-card-container">
+            <p class="service-card__price text text--bolder">
+                от 29 990 руб.
+            </p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="service-card__btn btn btn--muted">Заказать услугу</label>
+        </div>
+    </div>
+    <img src="assets/images/illustration02.svg" alt="Landing Page" class="service-card__img">
+</div>
+            <div class="service-card">
+    <img src="assets/images/illustration03.svg" alt="Корпоративный сайт" class="service-card__img">
+    <div class="service-card-block">
+        <h2 class="service-card__subtitle subtitle">Корпоративный сайт</h2>
+        <p class="service-card__text text">
+            Разработаем современный корпоративный сайт на 1С-Битрикс с мобильной версией и базовой SEO-оптимизацией. Позаботимся о том, чтобы сайт максимально соответствовал задачам вашего бизнеса и ожиданиям целевой аудитории.
+        </p>
+        <div class="service-card-container">
+            <p class="service-card__price text text--bolder">
+                от 79 000 руб.
+            </p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="service-card__btn btn btn--muted">Заказать услугу</label>
+        </div>
+    </div>
+</div>
+            <div class="help">
+    <p class="help__like-title text text--larger text--centered">
+        Не знаете что выбрать?
+    </p>
+    <p class="help__text text text--centered">
+        Выслушаем Ваш запрос, поможем с выбором и подготовим индивидуальное предложение.
+    </p>
+    <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+    <label for="overlay-toggle" class="help__btn btn btn--highlight">Заказать звонок</label>   
+</div>     
+        </section>
+        <section class="service" id="service-design">
+            <h1 class="service__title title text--centered">Дизайн</h1>
+            <div class="service-card">
+    <div class="service-card-block">
+        <h2 class="service-card__subtitle subtitle">Дизайн/редизайн сайта</h2>
+        <p class="service-card__text text">
+            Независимо от типа проекта — лендинг, интернет-магазин или корпоративный сайт — мы создаем уникальный, адаптивный и функциональный дизайн. Каждый элемент (баннеры, кнопки, навигация) разрабатывается с учетом поведения пользователя и бизнес-целей. Результат — сайт, который не только выглядит современно, но и работает на продажи.
+        </p>
+        <div class="service-card-container">
+            <p class="service-card__price text text--bolder">
+                от 55 000 руб.
+            </p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="service-card__btn btn btn--muted">Заказать услугу</label>
+        </div>
+    </div>
+    <img src="assets/images/illustration04.svg" alt="Дизайн/редизайн сайта" class="service-card__img">
+</div>
+            <div class="service-card">
+    <img src="assets/images/illustration05.svg" alt="Разработка логотипа" class="service-card__img">
+    <div class="service-card-block">
+        <h2 class="service-card__subtitle subtitle">Разработка логотипа</h2>
+        <p class="service-card__text text">
+            Логотип — это визуальная «подпись» бренда, которая формирует первое впечатление. Мы создаём запоминающийся и узнаваемый символ, отражающий суть вашей компании. Логотип будет работать на всех каналах: от сайта до упаковки и рекламы, помогая вам выделиться на фоне конкурентов.
+        </p>
+        <div class="service-card-container">
+            <p class="service-card__price text text--bolder">
+                от 15 000 руб.
+            </p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="service-card__btn btn btn--muted">Заказать услугу</label>
+        </div>
+    </div>
+</div>
+            <div class="service-card">
+    <div class="service-card-block">
+        <h2 class="service-card__subtitle subtitle">Разработка фирменного стиля</h2>
+        <p class="service-card__text text">
+            Фирменный стиль — это единый визуальный язык вашего бизнеса, который передаёт его ценности и позиционирование. Мы не просто создадим шрифты, цвета и элементы оформления — мы раскроем суть вашей компании: миссию, философию, преимущества и отношение к клиентам. Результат — целостный образ, который будет восприниматься как надежный и сильный бренд.
+        </p>
+        <div class="service-card-container">
+            <p class="service-card__price text text--bolder">
+                от 34 500 руб.
+            </p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="service-card__btn btn btn--muted">Заказать услугу</label>
+        </div>
+    </div>
+    <img src="assets/images/illustration09.svg" alt="Разработка фирменного стиля" class="service-card__img">
+</div>
+            <div class="help">
+    <p class="help__like-title text text--larger text--centered">
+        Не знаете что выбрать?
+    </p>
+    <p class="help__text text text--centered">
+        Выслушаем Ваш запрос, поможем с выбором и подготовим индивидуальное предложение.
+    </p>
+    <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+    <label for="overlay-toggle" class="help__btn btn btn--highlight">Заказать звонок</label>   
+</div>
+        </section>
+        <section class="service" id="service-promotion">
+            <h1 class="service__title title text--centered">Продвижение</h1>
+            <div class="service-card">
+    <img src="assets/images/illustration07.svg" alt="Контекстная реклама" class="service-card__img">
+    <div class="service-card-block">
+        <h2 class="service-card__subtitle subtitle">Контекстная реклама</h2>
+        <p class="service-card__text text">
+            Настройка и ведение рекламных кампаний в Яндекс.Директ и Google Adwords, постоянная работа над повышением эффективности.
+        </p>
+        <div class="service-card-container">
+            <p class="service-card__price text text--bolder">
+                от 19 900 руб.
+            </p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="service-card__btn btn btn--muted">Заказать услугу</label>
+        </div>
+    </div>
+</div>
+            <div class="service-card">
+    <div class="service-card-block">
+        <h2 class="service-card__subtitle subtitle">Поисковое продвижение</h2>
+        <p class="service-card__text text">
+            Выведем сайт в ТОП Яндекс и Google, поможем получать заявки из поисковых систем. Делаем все, что нужно: исправляем технические ошибки, делаем сайт удобнее для клиентов, наполняем полезным контентом.
+        </p>
+        <div class="service-card-container">
+            <p class="service-card__price text text--bolder">
+                от 29 900 руб.
+            </p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="service-card__btn btn btn--muted">Заказать услугу</label>
+        </div>
+    </div>
+    <img src="assets/images/illustration08.svg" alt="Поисковое продвижение" class="service-card__img">
+</div>
+            <div class="help">
+    <p class="help__like-title text text--larger text--centered">
+        Не знаете что выбрать?
+    </p>
+    <p class="help__text text text--centered">
+        Выслушаем Ваш запрос, поможем с выбором и подготовим индивидуальное предложение.
+    </p>
+    <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+    <label for="overlay-toggle" class="help__btn btn btn--highlight">Заказать звонок</label>   
+</div>
+        </section>
+        <section class="service" id="service-crm">
+            <h1 class="service__title title text--centered">Битрикс24</h1>
+            <div class="service-card">
+    <img src="assets/images/illustration06.svg" alt="Битрикс24" class="service-card__img">
+    <div class="service-card-block">
+        <h2 class="service-card__subtitle subtitle">Битрикс24</h2>
+        <p class="service-card__text text">
+            Битрикс24 - корпоративный портал, информационная база компании, предназначенная для внутреннего использования. CRM позволяет в едином пространстве управлять организационными, коммуникационными и проектными процессами.
+        </p>
+        <div class="service-card-container">
+            <p class="service-card__price text text--bolder">
+                от 99 000 руб.
+            </p>
+            <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+            <label for="overlay-toggle" class="service-card__btn btn btn--muted">Заказать услугу</label>
+        </div>
+    </div>
+</div>
+            <div class="help">
+    <p class="help__like-title text text--larger text--centered">
+        Не знаете что выбрать?
+    </p>
+    <p class="help__text text text--centered">
+        Выслушаем Ваш запрос, поможем с выбором и подготовим индивидуальное предложение.
+    </p>
+    <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+    <label for="overlay-toggle" class="help__btn btn btn--highlight">Заказать звонок</label>   
+</div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="footer-top">
+        <a href="index.html" class="footer__logo-link">
+            <img class="footer__logo" src="assets/images/logo-simple.svg" alt="QScape logo">
+        </a>
+        <div class="footer-info">
+            <div class="footer-contacts">
+                <a href="mailto:info@qscape.ru" class="footer-info__item link icon-email-light text text--accent">info@qscape.ru</a>
+                <a href="tel:+79200678467" class="footer-info__item link icon-phone-light text text--accent">+7 (920) 067-84-67</a>
+                <input type="checkbox" id="overlay-toggle" class="overlay-checkbox">
+                <label for="overlay-toggle" class="footer-info__btn btn btn--highlight">Заказать звонок</label>
+            </div>
+            <div class="footer-info__container">
+                <img class="footer-info__icon" src="assets/images/icon-info-light.svg" alt="">
+                <p class="footer-info__text text text--accent">
+                    ООО&nbsp"КУСКЕЙП"<br>
+                    ИНН:&nbsp5260479553<br>
+                    ОГРН:&nbsp1215200032112<br>
+                </p>
+            </div>
+            <div class="footer-info__container">
+                <img class="footer-info__icon" src="assets/images/icon-map-light.svg" alt="">
+                <p class="footer-info__item text text--accent">
+                    г.&nbspНижний&nbspНовгород,<br>
+                    ул.&nbspКовалихинская,<br>
+                    д.&nbsp72Б, 603155<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <p class="footer__text text">
+        © 2025 ООО "КУСКЕЙП" Все права защищены
+    </p>
+</footer>
+
+    <a href="#header" class="scroll-up">
+    <svg class="scroll-up__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 13.4141L7 1.41406M7 1.41406L1 7.41406M7 1.41406L13 7.41406" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+</a>
+</body>
+</html>
