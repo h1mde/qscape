@@ -1,0 +1,20 @@
+.main-services{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l-adaptive);
+  padding-bottom: var(--space-l-adaptive);
+}
+
+.services-nav{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-s-adaptive);
+  padding: 0 var(--space-page) var(--space-s-adaptive);
+}
+.service{
+  padding: 0 var(--space-page);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
