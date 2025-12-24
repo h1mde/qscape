@@ -3,6 +3,10 @@
     height: clamp(50px, calc(50px + (90 - 50) * ((100vw - 375px) / (1920 - 375))), 90px);
     overflow: hidden;
     box-shadow: var(--shadow);
+    position: relative;
+    display: inline-block; 
+    transition: transform 100ms linear;
+
     .project-card{
         height: 100%;
         width: 100%;
@@ -13,5 +17,8 @@
             object-fit: cover;
             object-position: center;
         }
-    }  
+    }
+    &:hover{
+        transform: translateY(-20px);
+    }
 }
